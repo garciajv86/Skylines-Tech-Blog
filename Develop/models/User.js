@@ -16,16 +16,17 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    email: {
+    username: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
       validate: {
-        isEmail: true,
+        notNull: {
+          msg: 'Username is required.',
+        },
+        notEmpty: {
+          msg: 'Username cannot be empty.',
+        },
       },
     },
     password: {
@@ -33,6 +34,12 @@ User.init(
       allowNull: false,
       validate: {
         len: [8],
+        notNull: {
+          msg: 'Password is required.',
+        },
+        notEmpty: {
+          msg: 'Password cannot be empty.',
+        },
       },
     },
   },
