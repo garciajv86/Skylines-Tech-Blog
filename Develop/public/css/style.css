@@ -1,4 +1,4 @@
-header, .project:not(:last-child) {
+header {
   border-bottom: 1px solid #ccc;
 }
 
@@ -17,7 +17,7 @@ header, .project:not(:last-child) {
   text-decoration: underline;
 }
 
-.dollar-amount {
+.updatedAt {
   color: #056605;
   font-weight: bold;
   margin-left: -5px;

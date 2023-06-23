@@ -10,14 +10,13 @@
           {{blog.content}}
         </p>
       </div>
-      <p>Created by
+      <p>Created by:
         {{blog.user.username}}
         on
         {{format_date blog.createdAt}}</p>
-      <p>Last Updated
-        <!-- Pass needed_funding value to the helper function -->
-        <span class='dollar-amount'>{{format_date blog.updatedAt}}</span>
-
+      <p>Last Updated:
+        <!-- Pass updatedAt value to the helper function -->
+        <span class='updatedAt'>{{format_date blog.updatedAt}}</span>
       </p>
     </div>
   </div>
