@@ -1,8 +1,8 @@
-// Function to handle the form submission for creating a new blog
+//* Function to handle the form submission for creating a new blog
 const handleNewBlogSubmit = async (event) => {
   event.preventDefault();
 
-  // Get the input values from the form
+  //* Get the input values from the form
   const title = document.querySelector('#blog-title').value.trim();
   const content = document.querySelector('#blog-content').value.trim();
 
