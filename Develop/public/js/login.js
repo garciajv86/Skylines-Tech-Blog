@@ -1,21 +1,22 @@
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
-  // Collect values from the login form
-  const email = document.querySelector('#email-login').value.trim();
+  //* Get the input values from the form
+  const username = document.querySelector('#username-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
 
-  if (email && password) {
-    // Send a POST request to the API endpoint
+  //* Validate username and password
+  if (username && password) {
+    //* Make an API request to log in the user
     const response = await fetch('/api/users/login', {
       method: 'POST',
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ username, password }),
       headers: { 'Content-Type': 'application/json' },
     });
 
     if (response.ok) {
-      // If successful, redirect the browser to the profile page
-      document.location.replace('/profile');
+      //* If the login was successful, redirect to the homepage
+      document.location.replace('/');
     } else {
       alert(response.statusText);
     }
@@ -25,29 +26,31 @@ const loginFormHandler = async (event) => {
 const signupFormHandler = async (event) => {
   event.preventDefault();
 
-  const name = document.querySelector('#name-signup').value.trim();
-  const email = document.querySelector('#email-signup').value.trim();
+  //* Get the input values from the form
+  const username = document.querySelector('#username-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
 
-  if (name && email && password) {
+  //* Validate username and password
+  if (username && password) {
     const response = await fetch('/api/users', {
       method: 'POST',
-      body: JSON.stringify({ name, email, password }),
+      body: JSON.stringify({ username, password }),
       headers: { 'Content-Type': 'application/json' },
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      //* If the signup was successful, redirect to the login page
+      document.location.replace('/login');
     } else {
       alert(response.statusText);
     }
   }
 };
-
+//* Attach event listener to the login form
 document
   .querySelector('.login-form')
   .addEventListener('submit', loginFormHandler);
-
+//* Attach event listener to the signup form
 document
   .querySelector('.signup-form')
   .addEventListener('submit', signupFormHandler);

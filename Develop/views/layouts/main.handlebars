@@ -6,25 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Blog</title>
   <link rel="stylesheet" href="/css/jass.css">
+  <!-- BootStrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Relative path -->
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
   <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
+    <header class="display-flex justify-space-between align-center p-2 bg-info">
       <h1>
-        <a href="/">Skyline Tech Blog!</a>
+        <a class="title bg-white rounded-pill p-1" href="/">Skyline Tech Blog</a>
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/homepage">homepage</a> |
-        <a href="/dashboard">dashboard</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a class="text-white" href="/homepage">Home</a> |
+        <a class="text-white" href="/dashboard">Dashboard</a> |
+        <button class="no-button text-white" id="logout">Logout</button>
         {{else}}
-        <a href="/homepage">homepage</a> |
-        <a href="/dashboard">dashboard</a> |
-        <a href="/login">login</a>
+        <a class="text-white" href="/homepage">Home</a> |
+        <a class="text-white" href="/dashboard">Dashboard</a> |
+        <a class="text-white" href="/login">Login</a>
         {{/if}}
       </nav>
     </header>
