@@ -18,7 +18,7 @@ const loginFormHandler = async (event) => {
       //* If the login was successful, redirect to the homepage
       document.location.replace('/');
     } else {
-      alert(response.statusText);
+      alert('Login failed. Please try again.');
     }
   }
 };
@@ -32,7 +32,7 @@ const signupFormHandler = async (event) => {
 
   //* Validate username and password
   if (username && password) {
-    const response = await fetch('/api/users', {
+    const response = await fetch('/api/signup', {
       method: 'POST',
       body: JSON.stringify({ username, password }),
       headers: { 'Content-Type': 'application/json' },
@@ -42,7 +42,7 @@ const signupFormHandler = async (event) => {
       //* If the signup was successful, redirect to the login page
       document.location.replace('/login');
     } else {
-      alert(response.statusText);
+      alert('Signup failed. Please try again');
     }
   }
 };

@@ -9,5 +9,6 @@ router.use('/', homeRoutes);
 router.use('/api', apiRoutes);
 router.use('/api/users', userRoutes);
 router.use('/api/blogs', blogRoutes);
+router.use('/api/signup', userRoutes);
 
 module.exports = router;
