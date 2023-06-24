@@ -7,5 +7,7 @@ const blogRoutes = require('./api/blogRoutes');
 
 router.use('/', homeRoutes);
 router.use('/api', apiRoutes);
+router.use('/api/users', userRoutes);
+router.use('/api/blogs', blogRoutes);
 
 module.exports = router;
