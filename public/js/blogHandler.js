@@ -42,8 +42,53 @@ const handleDeleteBlogClick = async (event) => {
   }
 };
 
+//* Function to handle the form submission for editing a blog
+const handleEditBlogSubmit = async (event) => {
+  event.preventDefault();
+
+  //* Get the input values from the form
+  const blogId = event.target.querySelector('input[name="blog-id"]').value;
+  const title = event.target.querySelector('#edit-blog-title').value.trim();
+  const content = event.target.querySelector('#edit-blog-content').value.trim();
+
+  //* Make an API request to update the blog
+  const response = await fetch(`/api/blogs/${blogId}`, {
+    method: 'PUT',
+    body: JSON.stringify({ title, content }),
+    headers: { 'Content-Type': 'application/json' },
+  });
+
+  if (response.ok) {
+    //* If the blog was updated successfully, reload the page to see the changes
+    document.location.reload();
+  } else {
+    //* Display an error message if the blog update failed
+    alert('Failed to update the blog. Please try again.');
+  }
+};
+
+//* Function to handle the click event for toggling the edit form
+const handleToggleEditForm = (event) => {
+  const blogId = event.target.getAttribute('data-id');
+  const editForm = document.querySelector(
+    `.blog-edit-form[data-id="${blogId}"]`
+  );
+
+  if (editForm) {
+    editForm.classList.toggle('d-none');
+  }
+};
+
 //* Event listeners for form submission and click events
-document.querySelector('.new-blog-form').addEventListener('submit', handleNewBlogSubmit);
-document.querySelector('.blog-list').addEventListener('click', handleDeleteBlogClick);
-
-
+document
+  .querySelector('.new-blog-form')
+  .addEventListener('submit', handleNewBlogSubmit);
+document
+  .querySelector('.blog-list')
+  .addEventListener('click', handleDeleteBlogClick);
+document.querySelectorAll('.edit-blog-form').forEach((form) => {
+  form.addEventListener('submit', handleEditBlogSubmit);
+});
+document.querySelectorAll('.edit-blog-button').forEach((button) => {
+  button.addEventListener('click', handleToggleEditForm);
+});
