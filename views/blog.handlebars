@@ -4,3 +4,17 @@
   <p>Created by: {{user.username}} on {{format_date createdAt}}</p>
   <p>Last Updated: {{user.username}} on {{format_date updatedAt}}</p>
 </div>
+{{#if logged_in}}
+  {{#if comments.length}}
+    <div class='comments-section'>
+      <h3>Comments</h3>
+      <ul>
+        {{#each comments}}
+          <li>{{this.content}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  {{else}}
+    <p>No comments available.</p>
+  {{/if}}
+{{/if}}
