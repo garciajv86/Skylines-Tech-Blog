@@ -17,7 +17,7 @@ const hbs = exphbs.create({ helpers });
 const sess = {
   secret: process.env.SESSION_SECRET,
   cookie: {
-    maxAge: 300000,
+    maxAge: 3600000, //* 1 hour
     httpOnly: true,
     secure: false,
     sameSite: 'strict',
@@ -31,9 +31,9 @@ const sess = {
 
 app.use(session(sess));
 
-// Inform Express.js on which template engine to use
+//* Inform Express.js on which template engine to use
 app.engine('handlebars', hbs.engine);
-// app.set('views', path.join(__dirname, 'Develop', 'views'));
+//* app.set('views', path.join(__dirname, 'Develop', 'views'));
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
