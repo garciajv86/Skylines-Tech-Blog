@@ -19,29 +19,23 @@ This project is a fullstack Tech Blog app, where users can login or register as 
 
 ## Link
 
-Below is a link to a walk through video demonstrating the app in use:<br>
-[Skylines_Tech_Blog](https://drive.google.com/file/d/1fi8mCVk09SgNTeRjO37YLzJtCNW6_J_J/view)<br>
+Need to add link below for the heroku deployed app:<br>
+[Skylines_Tech_Blog]()<br>
 [Projects_Repo](https://github.com/garciajv86/Skylines-Tech-Blog)
 
 ## ScreenShot
 DataBase Design:
 <br>
 
-![DataBase_Screenshot](./Assets/e_CommerceDB_Design.png)
-
-<br>
-
-Insomnia:
-<br>
-![Insomnia_Screenshot](./Assets/InsomniaScreenshot.png)
-
+![Tech_Blog_Screenshot](./Assets/Screenshot%202023-06-30%20at%201.34.40%20PM.png)
+![Tech_Blog_Screenshot](./Assets/Screenshot%202023-06-30%20at%201.35.12%20PM.png)
+![Tech_Blog_Screenshot](./Assets/Screenshot%202023-06-30%20at%201.35.34%20PM.png)
+![Tech_Blog_Screenshot](./Assets/Screenshot%202023-06-30%20at%201.36.03%20PM.png)
 
 ## Installation
 
-This app requires the MySQL database and Insomnia to be installed on your computer, I provided links below.<br>
+This app requires the MySQL database to be installed on your computer, I provided links below.<br>
 [MySQL_Download](https://dev.mysql.com/downloads/mysql/)
-<br>
-[Insomnia_Download](https://docs.insomnia.rest/)
 
 ## Usage
 
