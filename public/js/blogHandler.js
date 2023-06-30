@@ -79,6 +79,7 @@ const handleToggleEditForm = (event) => {
   }
 };
 
+
 //* Event listeners for form submission and click events
 document
   .querySelector('.new-blog-form')
