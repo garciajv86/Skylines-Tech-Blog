@@ -24,7 +24,7 @@ Need to add link below for the heroku deployed app:<br>
 [Projects_Repo](https://github.com/garciajv86/Skylines-Tech-Blog)
 
 ## ScreenShot
-DataBase Design:
+Website Screenshots:
 <br>
 
 ![Tech_Blog_Screenshot](./Assets/Screenshot%202023-06-30%20at%201.34.40%20PM.png)
@@ -39,7 +39,7 @@ This app requires the MySQL database to be installed on your computer, I provide
 
 ## Usage
 
-To use this app you must first log into your MySQL database and run the schema.sql file located in the db folder. Once you have ran the schema you can than quit MySQL. Now you must run the command npm run seed to seed your database. Once the database is seeded you then can run the command npm start to allow you the server to start listening. Once the server is listening you can open the insomnia app and start making request, a demo of how to do so is in the link above under Link titled E_Commerce_Backend.
+To use this app, just visit the website, create a user account if you dont already have one, log in. You can then click on blogs and even make comments on the blogs. If you visit your dashboard you will be able to create a new blog update current blogs and even delete blogs. When you are done with your session you can simply
 
 ## Credits
 
@@ -57,18 +57,25 @@ This project is protected under the [MIT](https://choosealicense.com/licenses/mi
 ![badmath](https://img.shields.io/badge/-JAVASCRIPT-blue)<br>
 ![badmath](https://img.shields.io/badge/-Node.JS-brightgreen)
 ![badmath](https://img.shields.io/badge/-NPM-success)<br>
-![badmath](https://img.shields.io/badge/-Inquirer-success)
 ![badmath](https://img.shields.io/badge/-Sequelize-success)
+![badmath](https://img.shields.io/badge/-ConnectSessionSequelize-success)<br>
 ![badmath](https://img.shields.io/badge/-Express-success)
+![badmath](https://img.shields.io/badge/-ExpressHandlebars-success)
+![badmath](https://img.shields.io/badge/-ExpressSession-success)<br>
 ![badmath](https://img.shields.io/badge/-Dotenv-success)
+![badmath](https://img.shields.io/badge/-bcrypt-success)
 ![badmath](https://img.shields.io/badge/-MySQL2-success)<br>
 ![badmath](https://img.shields.io/badge/-MySQL-blue)
 
 ## API
 
-MySQL2, express, sequelize, and dotenv was the NPM packages used for this project
+MySQL2, express, sequelize, dotenv, bcrypt, connect-session-sequelize, express-handlebars, and express-session was the NPM packages used for this project
 
 - [MySQL2 Docs](https://www.npmjs.com/package/mysql2#installation)
 - [Sequelize Docs](https://sequelize.org/docs/v6/)
 - [Express Docs](https://expressjs.com/en/4x/api.html)
 - [Dotenv Docs](https://www.npmjs.com/package/dotenv)
+- [Bcrypt Docs](https://www.npmjs.com/package/bcrypt)
+- [Connect Session Sequelize Docs](https://www.npmjs.com/package/connect-session-sequelize)
+- [Express Handlebars Docs](https://www.npmjs.com/package/express-handlebars)
+- [Express Session Docs](https://www.npmjs.com/package/express-session)
