@@ -19,8 +19,8 @@ This project is a fullstack Tech Blog app, where users can login or register as 
 
 ## Link
 
-Need to add link below for the heroku deployed app:<br>
-[Skylines_Tech_Blog]()<br>
+Below are links to the deployed app and the repo:<br>
+[Skylines_Tech_Blog](https://skyline-tech-blog-2c90216c12f8.herokuapp.com/)<br>
 [Projects_Repo](https://github.com/garciajv86/Skylines-Tech-Blog)
 
 ## ScreenShot
