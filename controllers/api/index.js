@@ -5,5 +5,6 @@ const blogRoutes = require('./blogRoutes');
 
 router.use('/users', userRoutes);
 router.use('/blogs', blogRoutes);
+router.use('/signup', userRoutes);
 
 module.exports = router;
