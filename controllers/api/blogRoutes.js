@@ -44,35 +44,6 @@ router.put('/:id', withAuth, async (req, res) => {
   }
 });
 
-//* Update a blog
-// router.put('/:id', withAuth, async (req, res) => {
-//   try {
-//     const { title, content } = req.body;
-
-//     const updatedBlog = await Blog.update(
-//       {
-//         title,
-//         content,
-//       },
-//       {
-//         where: {
-//           id: req.params.id,
-//           user_id: req.session.user_id,
-//         },
-//       }
-//     );
-
-//     if (!updatedBlog[0]) {
-//       res.status(404).json({ message: 'No blog found with this id' });
-//       return;
-//     }
-
-//     res.status(200).json({ message: 'Blog updated successfully' });
-//   } catch (error) {
-//     res.status(500).json({ message: 'Failed to update the blog' });
-//   }
-// });
-
 //* Delete a blog by ID
 router.delete('/:id', withAuth, async (req, res) => {
   try {
