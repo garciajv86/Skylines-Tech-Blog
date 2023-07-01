@@ -79,17 +79,17 @@ const handleToggleEditForm = (event) => {
   }
 };
 
-
 //* Event listeners for form submission and click events
 document
   .querySelector('.new-blog-form')
   .addEventListener('submit', handleNewBlogSubmit);
-document
-  .querySelector('.blog-list')
-  .addEventListener('click', handleDeleteBlogClick);
-document.querySelectorAll('.edit-blog-form').forEach((form) => {
-  form.addEventListener('submit', handleEditBlogSubmit);
-});
-document.querySelectorAll('.edit-blog-button').forEach((button) => {
-  button.addEventListener('click', handleToggleEditForm);
-});
+const blogList = document.querySelector('.blog-list');
+if (blogList) {
+  blogList.addEventListener('click', handleDeleteBlogClick);
+  document.querySelectorAll('.edit-blog-form').forEach((form) => {
+    form.addEventListener('submit', handleEditBlogSubmit);
+  });
+  document.querySelectorAll('.edit-blog-button').forEach((button) => {
+    button.addEventListener('click', handleToggleEditForm);
+  });
+}

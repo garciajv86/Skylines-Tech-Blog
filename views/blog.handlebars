@@ -10,7 +10,7 @@
       <h3>Comments</h3>
       <ul>
         {{#each comments as |comment|}}
-          <li>({{comment.user.username}}):{{comment.content}}</li>
+          <li>({{format_date comment.createdAt}})({{comment.user.username}}):{{comment.content}}</li>
         {{/each}}
       </ul>
     </div>
