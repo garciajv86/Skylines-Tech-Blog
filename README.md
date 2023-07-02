@@ -1,4 +1,4 @@
-# Skylines_Tech_Blog
+# Skyline_Tech_Blog
 
 ![badmath](https://img.shields.io/badge/License-MIT-yellow)<br>
 
@@ -20,8 +20,8 @@ This project is a fullstack Tech Blog app, where users can login or register as 
 ## Link
 
 Below are links to the deployed app and the repo:<br>
-[Skylines_Tech_Blog](https://skyline-tech-blog-2c90216c12f8.herokuapp.com/)<br>
-[Projects_Repo](https://github.com/garciajv86/Skylines-Tech-Blog)
+[Skyline_Tech_Blog](https://skyline-tech-blog-2c90216c12f8.herokuapp.com/)<br>
+[Projects_Repo](https://github.com/garciajv86/skyline-tech-blog)
 
 ## ScreenShot
 Website Screenshots:
@@ -39,7 +39,7 @@ This app requires the MySQL database to be installed on your computer, I provide
 
 ## Usage
 
-To use this app, just visit the website, create a user account if you dont already have one, log in. You can then click on blogs and even make comments on the blogs. If you visit your dashboard you will be able to create a new blog update current blogs and even delete blogs. When you are done with your session you can simply
+To use this app, just visit the website, create a user account if you don't already have one, log in. You can then click on blogs and even make comments on the blogs. If you visit your dashboard you will be able to create a new blog update current blogs and even delete blogs. When you are done with your session you can simply
 
 ## Credits
 
